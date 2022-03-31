@@ -1,0 +1,91 @@
+:root {
+  --clr-primary: #2caeba;
+  --black: #000;
+  --border-radius: 0.25rem;
+  --box-shadow: 0px 11px 20px 10px rgba(0, 0, 0, 0.38);
+  --clr-background: #f1f5f8;
+  --clr-title: #102a42;
+  --max-width: 1170px;
+  --font-title: 20px;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--clr-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.tab-content {
+  padding: 50px;
+  box-shadow: var(--box-shadow);
+}
+.tab {
+  background: var(--clr-primary);
+  padding: 10px;
+  border: none;
+  width: 33.33%;
+  font-size: var(--font-title);
+  color: var(--black);
+  cursor: pointer;
+}
+.tab.activetab {
+  color: var(--white);
+  background: #12555b;
+}
+.acc-content {
+  display: none;
+  padding: 10px;
+}
+.acc-content {
+  color: #000;   
+
+  margin: 12px 0;
+  transition: all .5s ease-in-out;
+}
+.acc-content.active{
+  display: block;
+}
+.acc-title {
+  background: var(--clr-primary);
+  opacity: 0.8;
+  padding: 15px 20px;
+  color: var(--black);
+  cursor: pointer;
+  display: flex;
+    justify-content: space-between;
+}
+.acc-title.active {
+  opacity: 1;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  color: var(--clr-title);
+}
+.section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+}
+.arrow-icon{width: 13px;
+  transform: rotate(90deg);}
+  .active .arrow-icon{transform: rotate(-90deg);}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
