@@ -1,11 +1,11 @@
 import './App.css';
-import Accordion from './Components/Accordion';
+import Slider from './Components/Slider';
 
 function App() {
   return (
     <div className="App">
       <div className='section'>
-      <Accordion />
+        <Slider></Slider>
       </div>
        </div>
   );
